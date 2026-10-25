@@ -3,6 +3,9 @@
 
 Website pengunduh video TikTok yang dibuat menggunakan HTML, CSS, dan JavaScript.
 
+# LINK WEB
+https://github.com/edoaria/LOMBATIK-GLDNBY-DOWNLOADER
+
 ## Fitur
 - Unduh video Tiktok Tanpa Watermark.
 - Unduh audio dari video Tiktok (MP3).
