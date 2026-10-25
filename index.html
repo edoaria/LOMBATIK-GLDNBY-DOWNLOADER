@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GOLDENBOY - Downloader Video & MP3 </title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+        <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>GOLDENBOY <span>Downloader</span></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Beranda</a></li>
+                <li><a href="#fitur">Fitur</a></li>
+                <li><a href="#cara-pakai">Cara Pakai</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <h2>Download Video TikTok Tanpa Watermark & MP3 </h2>
+            <p>Tempel tautan video TikTok yang kamu ingin unduh.</p>
+
+            <form id="downloadForm">
+                <div class="input-group">
+                    <input 
+                        type="url" 
+                        id="tiktokUrl" 
+                        name="tiktokUrl" 
+                        placeholder="Tempel tautan TikTok di sini...(misal: https://www.tiktok.com/...)" 
+                        required
+                    >
+                    <button type="submit" id="btnDownload">
+                        <span>Download</span>
+                    </button>
+                </div>
+            </form>
+
+            <div id="errorMsg" class="msg-box error"></div>
+
+            <div id="loading" style="display: none;">
+                <div class="spinner"></div>
+                <p id="loadingText">Sedang memproses video, harap tunggu...</p>
+            </div>
+        </section>
+
+        <section id="resultSection" style="display: none;">
+            <div class="video-info">
+                
+                <img id="videoThumb" src="" alt="Thumbnail Video TikTok">
+
+                <h3 id="videoTitle">Judul Video TikTok</h3>
+                <p id="videoAuthor">Oleh: @username</p>
+            </div>
+
+            <div class="download-options">
+                <button type="button" id="dlNoWatermark" class="btn-download">
+                    <span>🎬</span> <span class="btn-text">Download Video Tiktok Tanpa Watermark</span>
+                </button>
+                <button type="button" id="dlMp3" class="btn-download">
+                    <span>🎵</span> <span class="btn-text">Download Audio (MP3)</span>
+                </button>
+                <a id="dlDirectLink" href="#" target="_blank" rel="noopener noreferrer" class="btn-download btn-fallback">
+                    <span>⚡</span> <span>Lihat Hasil / Preview (Tab Baru)</span>
+                </a>
+            </div>
+        </section>
+
+        <section id="fitur">
+            <h2>Mengapa Memilih Web Ini?</h2>
+            <ul>
+                <li>
+                    <h3>Tanpa Watermark</h3>
+                    <p>Unduh video tanpa watermark dengan mudah tanpa iklan</p>
+                </li>
+                <li>
+                    <h3>Format MP3 Berkualitas</h3>
+                    <p>Unduh audio jika tautan audio disediakan oleh layanan sumber.</p>
+                </li>
+                <li>
+                    <h3>100% Gratis & Mudah</h3>
+                    <p>Bisa digunakan sepuasnya lewat perangkat apa saja tanpa aplikasi tambahan.</p>
+                </li>
+            </ul>
+        </section>
+
+        <section id="cara-pakai">
+            <h2>Cara Download Video TikTok</h2>
+            <ol>
+                <li>Buka aplikasi atau situs TikTok, lalu cari video yang ingin kamu unduh.</li>
+                <li>Klik tombol <strong>Bagikan (Share)</strong> dan pilih <strong>Salin Tautan (Copy Link)</strong>.</li>
+                <li>Kembali ke halaman ini, tempelkan tautan pada kolom input di atas, lalu klik <strong>Download</strong>.</li>
+                <li>Pilih video tanpa watermark atau audio. Kualitas HD dan keberhasilan unduhan bergantung pada ketersediaan video serta layanan sumber.</li>
+            </ol>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 GOLDENBOY - DOWNLOADER by MUSAKE GOLDENBOY. All Rights Reserved.</p>
+    </footer>
+
+        <script src="script.js" defer></script>
+
+</body>
+</html>
